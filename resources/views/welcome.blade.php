@@ -69,17 +69,9 @@
                         <span>Sistem Operational</span>
                     </div>
 
-                    @if (Route::has('login'))
-                        @auth
-                            <a href="{{ route('dashboard') }}" class="px-4 py-2 text-xs font-bold rounded-lg bg-blue-900 hover:bg-blue-800 text-white shadow-sm transition-all">
-                                Dashboard Admin
-                            </a>
-                        @else
-                            <a href="{{ route('login') }}" class="px-4 py-2 text-xs font-bold rounded-lg bg-blue-900 hover:bg-blue-800 text-white shadow-sm transition-all">
-                                Masuk Portal
-                            </a>
-                        @endauth
-                    @endif
+                    <a href="#direktori" class="px-4 py-2 text-xs font-bold rounded-lg bg-blue-900 hover:bg-blue-800 text-white shadow-sm transition-all">
+                        Portal Aplikasi
+                    </a>
                 </div>
 
             </div>
