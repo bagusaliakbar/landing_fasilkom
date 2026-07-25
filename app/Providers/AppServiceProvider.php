@@ -15,7 +15,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // Custom public path binding for shared hosting (Hostinger / cPanel public_html setup)
+        if (!is_dir(base_path('public/build')) && is_dir(base_path('build'))) {
+            $this->app->bind('path.public', fn () => base_path());
+        }
     }
 
     /**
