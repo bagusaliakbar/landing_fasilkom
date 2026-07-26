@@ -30,7 +30,7 @@
     </head>
     <body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col selection:bg-blue-600 selection:text-white"> 
         <!-- HERO SECTION -->
-        <section id="beranda" class="relative bg-gradient-to-b from-white via-slate-50 to-slate-100 pt-12 pb-16 md:pt-16 md:pb-20 border-b border-slate-200 hero-bg-pattern">
+        <section id="beranda" class="relative bg-linear-to-b from-white via-slate-50 to-slate-100 pt-12 pb-16 md:pt-16 md:pb-20 border-b border-slate-200 hero-bg-pattern">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 
                 <!-- Main Academic Title -->
@@ -51,7 +51,7 @@
                             type="text" 
                             id="appSearchInput"
                             placeholder="Cari nama aplikasi atau kata kunci (misal: SIAKAD, SIBIMA, Skripsi, LMS, Jurnal)..." 
-                            class="w-full bg-transparent border-0 focus:ring-0 focus:outline-none text-slate-900 placeholder-slate-400 px-3 py-2 text-sm sm:text-base font-medium"
+                            class="w-full bg-transparent border-0 focus:ring-0 focus:outline-none placeholder-slate-400 px-3 py-2 text-sm sm:text-base font-medium"
                             oninput="filterApps()"
                         />
                         <button 
